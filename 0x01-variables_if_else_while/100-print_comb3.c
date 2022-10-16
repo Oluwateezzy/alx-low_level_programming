@@ -12,12 +12,15 @@ int main(void)
 	{
 		for (num2 = 49; num2 < 58; num2++)
 		{
-			putchar(num);
-			putchar(num2);
-			if (num == 57 && num2 == 56)
-				break;
-			putchar(',');
-			putchar(' ');
+			if (num != num2 && num < num2)
+			{
+				putchar(num);
+				putchar(num2);
+				if (num == 57 && num2 == 56)
+					break;
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
