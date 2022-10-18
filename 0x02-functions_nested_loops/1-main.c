@@ -1,15 +1,11 @@
 #include "main.h"
 /**
- * print_alphabet - print character
+ * main - entry point
  *
- *Return: nothing
+ * Return: 0 = success
  */
-void print_alphabet(void)
+int main(void)
 {
-	char c;
-
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
+	print_alphabet();
+	return (0);
 }
