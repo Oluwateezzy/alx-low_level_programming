@@ -3,9 +3,7 @@
  * add - add two numbers together
  *
  * Return: result
- *
  * @c: character
- * 
  * @c1: character
  */
 int add(int c, int c1)
