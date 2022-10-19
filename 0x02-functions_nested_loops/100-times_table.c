@@ -3,6 +3,7 @@
 /**
  * print_times_table - multiplication table
  *
+ * @n: paramenter
  * Return: void
  */
 void print_times_table(int n)
