@@ -3,6 +3,7 @@
  * print_diagonal - diagonal with \
  * @n: parameter
  * Return: void
+ * @n: parameter
  */
 void print_diagonal(int n)
 {
@@ -14,7 +15,7 @@ void print_diagonal(int n)
 		{
 			int j;
 
-			for (j = 0; j <= i; j++)
+			for (j = 0; j < i; j++)
 			{
 				_putchar(' ');
 			}
