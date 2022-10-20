@@ -2,6 +2,7 @@
 /**
  * _isupper - returns uppercase character
  * Return: result
+ * @c: character
  */
 int _isupper(int c)
 {
