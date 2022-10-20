@@ -5,22 +5,23 @@
  */
 int main(void)
 {
-	int first, second, i, next;
+	long int first, second, i, next;
 
 	first = 1;
 	second = 2;
-	for (i = 0; i < 50; i++)
+	for (i = 1; i <= 50; ++i)
 	{
-		if (i <= 1)
-			next = i;
+		if (first != 20365011074)
+		{
+			printf("%ld, ", first);
+		}
 		else
 		{
-			next = first + second;
-			first = second;
-			second = next;
+			printf("%ld\n", first);
 		}
-		printf("%d, ", next);
+		next = first + second;
+		first = second;
+		second = next;
 	}
-	printf("\n");
 	return (0);
 }
