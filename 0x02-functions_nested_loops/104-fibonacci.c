@@ -19,7 +19,7 @@ int main(void)
 	first1 = first / 1000000000;
 	first2 = first % 1000000000;
 	second1 = second / 1000000000;
-	second2 = second / 1000000000;
+	second2 = second % 1000000000;
 	for (i = 92; i < 99; ++i)
 	{
 		printf(", %lu", second2 + (second2 / 1000000000));
