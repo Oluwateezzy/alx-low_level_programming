@@ -30,4 +30,5 @@ int main(void)
 		first2 = second2 - first2;
 	}
 	printf("\n");
+	return (0);
 }
