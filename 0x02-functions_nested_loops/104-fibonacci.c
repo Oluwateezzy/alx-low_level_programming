@@ -22,7 +22,7 @@ int main(void)
 	second2 = second % 1000000000;
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu", second2 + (second2 / 1000000000));
+		printf(", %lu", second1 + (second2 / 1000000000));
 		printf("%lu", second2 % 1000000000);
 		second1 = second1 + first1;
 		first1 = second1 - first1;
