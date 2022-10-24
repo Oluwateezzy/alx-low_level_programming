@@ -3,6 +3,7 @@
 /**
  * print_rev - reverse a string
  * Return: void
+ * @s: parameter
  */
 void print_rev(char *s)
 {
