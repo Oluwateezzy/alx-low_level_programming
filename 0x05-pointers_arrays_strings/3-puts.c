@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _put - put function
+ * _puts - put function
  * @str: pointer parameter
  * Return: void
  */
@@ -8,7 +8,7 @@ void _puts(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\n'; ++i)
+	for (i = 0; str[i] != '\n'; i++)
 	{
 		_putchar(str[i]);
 	}
