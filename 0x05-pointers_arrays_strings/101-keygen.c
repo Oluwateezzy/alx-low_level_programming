@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i, r;
+	int c, r;
 	time_t t;
 
 	i = 0;
