@@ -7,13 +7,20 @@
  */
 int main(void)
 {
-	int i;
-	char list[] = "1234567890qwertyuiopasdfghjklzxcvbnm!@#$%^&*()_- +=QWERTYUIOPASDFGHJKLZXCVBNM[]{};':\"<>,.?/\|";
-	srand(time(NULL));
-	for (i = 0; i < 10; i++)
+	int i, r;
+	time_t t;
+
+	i = 0;
+	r = 0;
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		printf("%c", list[rand() % (sizeof list - 1)]);
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c", r);
 	}
-	printf("\n");
+	printf("%c\n", (2772 - c));
 	return (0);
 }
