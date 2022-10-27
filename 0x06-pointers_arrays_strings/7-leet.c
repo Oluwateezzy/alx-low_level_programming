@@ -6,20 +6,21 @@
  */
 char *leet(char *ch)
 {
-	int i;
+	int i, let;
 
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 	for (i = 0; ch[i] != '\0'; i++)
 	{
-		if (ch[i] == 'a' || ch[i] == 'A')
-			ch[i] = 4 + 48;
-		else if (ch[i] == 'e' || ch[i] == 'E')
-			ch[i] = 3 + 48;
-		else if (ch[i] == 'o' || ch[i] == 'O')
-			ch[i] = 48;
-		else if (ch[i] == 't' || ch[i] == 'T')
-			ch[i] = 7 + 48;
-		else if (ch[i] == 'l' || ch[i] == 'L')
-			ch[i] = 1 + 48;
+		for (let = 0; let < 5; let++)
+		{
+			if (ch[i] == low_letters[let] || ch[i] == upp_letters[let])
+			{
+				ch[i] = numbers[let];
+				break;
+			}
+		}
 	}
 	return (ch);
 }
