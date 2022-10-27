@@ -4,7 +4,7 @@
  * @ch: string parameter
  * Return: char
  */
-char *string_toupper(char ch)
+char *string_toupper(char *ch)
 {
 	int i;
 
