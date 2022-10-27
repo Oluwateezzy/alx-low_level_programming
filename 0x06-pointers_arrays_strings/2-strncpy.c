@@ -2,6 +2,7 @@
 /**
  * _strncpy - copy string from scr to dest
  * @dest: destination parameter
+ * @n: byte parameter
  * @src: source parameter
  * Return: char
  */
