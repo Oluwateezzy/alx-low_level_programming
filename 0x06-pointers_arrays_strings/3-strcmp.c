@@ -16,5 +16,5 @@ int _strcmp(char *s1, char *s2)
 		count += s1[i];
 		count2 += s2[i];
 	}
-	return count - count2;
+	return (count - count2);
 }
