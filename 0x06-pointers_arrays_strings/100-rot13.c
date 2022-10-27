@@ -7,9 +7,9 @@
 char *rot13(char *ch)
 {
 	int i, j;
-
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
 	for (i = 0; ch[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
