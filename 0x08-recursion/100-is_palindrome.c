@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdbool.h>
 /**
  * is_palindrome - check if palindrome
  * @s: string parameter
