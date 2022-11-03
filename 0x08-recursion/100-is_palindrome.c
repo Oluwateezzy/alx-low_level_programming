@@ -6,22 +6,26 @@
  */
 int is_palindrome(char *s)
 {
-	if (s == "")
-		return (1);
-	char[] ch = _puts_recursion(*s);
-	char[] rev_ch = _print_rev_recursion(*s);
-	int i, flag;
+	int i;
 
-	flag = 0;
-	for (i = 0; ch[i] != '\n'; i++)
-	{
-		if (ch[i] == rev_ch[i])
-			flag = 1;
-		else
-		{
-			flag = 0;
-			break;
-		}
-	}
-	return (flag);
+	for (i = 0; s[i] != '\0'; i++);
+	if (ispal(*s, 0, i - 1))
+		return (1);
+	else
+		return (0);
+}
+/**
+ * ispal: helper function
+ * @str: address of string
+ * @s: start index
+ * @e: end index
+ * Return: bool
+ */
+bool ispal(char *str, int s, int e)
+{
+	if (s >= e)
+		return true;
+	if (str[s] != str[e])
+		return false;
+	return ispal(str, ++s, --end);
 }
