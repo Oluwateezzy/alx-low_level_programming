@@ -6,7 +6,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	return helper_func(n, 1);
+	return (helper_func(n, 1));
 }
 /**
  * helper_func - recursive check
