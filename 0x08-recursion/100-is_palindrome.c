@@ -22,7 +22,7 @@ int is_palindrome(char *s)
 	return (ispal(s, 0, i - 1));
 }
 /**
- * ispal: helper function
+ * ispal - helper function
  * @str: address of string
  * @s: start index
  * @e: end index
