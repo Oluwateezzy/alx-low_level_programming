@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdbool.h>
 /**
  * is_palindrome - check if palindrome
  * @s: string parameter
@@ -21,7 +22,7 @@ int is_palindrome(char *s)
  * @e: end index
  * Return: bool
  */
-bool ispal(char &str, int s, int e)
+bool ispal(char *str, int s, int e)
 {
 	if (s >= e)
 		return (true);
