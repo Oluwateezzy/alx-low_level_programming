@@ -27,5 +27,5 @@ bool ispal(char *str, int s, int e)
 		return (true);
 	if (str[s] != str[e])
 		return (false);
-	return (ispal(str, ++s, --end));
+	return (ispal(str, ++s, --e));
 }
