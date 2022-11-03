@@ -9,7 +9,7 @@ int is_palindrome(char *s)
 	int i;
 
 	for (i = 0; s[i] != '\0'; i++);
-	if (ispal(*s, 0, i - 1))
+	if (ispal(s, 0, i - 1))
 		return (1);
 	else
 		return (0);
@@ -21,11 +21,11 @@ int is_palindrome(char *s)
  * @e: end index
  * Return: bool
  */
-bool ispal(char *str, int s, int e)
+bool ispal(char &str, int s, int e)
 {
 	if (s >= e)
-		return true;
+		return (true);
 	if (str[s] != str[e])
-		return false;
-	return ispal(str, ++s, --end);
+		return (false);
+	return (ispal(str, ++s, --end));
 }
