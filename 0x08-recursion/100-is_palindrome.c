@@ -6,13 +6,9 @@
  */
 int is_palindrome(char *s)
 {
-	int i;
+	int i = _strlen_recursion(s);
 
-	for (i = 0; s[i] != '\0'; i++);
-	if (ispal(s, 0, i - 1))
-		return (1);
-	else
-		return (0);
+	return (ispal(s, 0, i - 1);
 }
 /**
  * ispal: helper function
@@ -21,11 +17,11 @@ int is_palindrome(char *s)
  * @e: end index
  * Return: bool
  */
-bool ispal(char *str, int s, int e)
+int ispal(char *str, int s, int e)
 {
 	if (s >= e)
-		return (true);
+		return (1);
 	if (str[s] != str[e])
-		return (false);
+		return (0);
 	return (ispal(str, ++s, --e));
 }
