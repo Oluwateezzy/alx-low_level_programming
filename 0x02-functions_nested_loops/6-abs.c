@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _abs - abusolute function
+ * _abs - abusolute value function
  *
  * @c: parameter
  *

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
+ * main - Entry point: print positive or negative number
  *
  * Return: Code succeed
  */

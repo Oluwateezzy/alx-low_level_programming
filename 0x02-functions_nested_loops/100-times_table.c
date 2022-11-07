@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_times_table - multiplication table
+ * print_times_table - multiplication table 15
  *
  * @n: paramenter
  * Return: void

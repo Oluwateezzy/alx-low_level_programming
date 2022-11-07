@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - entry point
+ * main - entry point: print character in a string
  *
  * Return: 0 = success
  */

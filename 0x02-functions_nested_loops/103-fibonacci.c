@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point: complicated fibonacci series
  * Return: 0
  */
 int main(void)

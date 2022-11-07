@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point: print hexadecimal character
  *
  * Return: 0 = suceess
  */

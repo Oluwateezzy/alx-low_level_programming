@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - entry point
+ * main - entry point: print the last digit of an integer
  *
  * Return: 0 succeed
  */

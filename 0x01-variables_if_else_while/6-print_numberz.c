@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point: print character from 0 - 9 using putchar
  *
  * Return: 0 = success
  */

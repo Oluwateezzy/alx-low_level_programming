@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point: print 00 - 99 with necessary formatting
  *
  * Return: 0 = success
  */

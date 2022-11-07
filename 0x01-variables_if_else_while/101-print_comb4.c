@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point: print 000 - 999 with necessary formatting
  *
  * Return: 0 = success
  */

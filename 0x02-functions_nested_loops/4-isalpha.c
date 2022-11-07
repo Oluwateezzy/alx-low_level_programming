@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isalpha - check uppercase character
+ * _isalpha - check alphabet character
  *
  * @c: character
  *

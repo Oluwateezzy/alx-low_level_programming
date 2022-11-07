@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - a function with no return value
+ * print_alphabet - print character a - z with putchar
  *
  * Return: void
  */

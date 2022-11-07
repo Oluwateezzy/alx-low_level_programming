@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point: print numbers from 0 - 9
  *
  * Return: 0 = success
  */

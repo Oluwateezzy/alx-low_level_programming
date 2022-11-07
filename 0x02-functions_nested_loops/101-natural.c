@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - entry point
+ * main - entry point: print the sum of factors of 3 and 5
  * Return: 0
  */
 int main(void)
