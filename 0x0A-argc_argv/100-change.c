@@ -27,7 +27,8 @@ int min_coin(int *coin, int size_c, int num_try)
 	return (res);
 }
 /**
- * main - entry point: prints the minimum number of coin to make change for an amount of money
+ * main - entry point: prints the minimum number of coin
+ * to make change for an amount of money
  * Return: int
  * @argc: argument count
  * @argv: argument vector
@@ -35,7 +36,6 @@ int min_coin(int *coin, int size_c, int num_try)
 int main(int argc, char *argv[])
 {
 	int coins[] = {25, 10, 5, 2, 1};
-	printf("%d\n", atoi(argv[1]));
 
 	if (argc != 2)
 	{
@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		int result = min_coin(coins, 5, atoi(argv[1]));
+
 		printf("%d\n", result);
 		return (0);
 	}
