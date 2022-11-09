@@ -8,7 +8,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, j, k;
+	unsigned int i, j, k, limit;
 	char *str;
 
 	if (s1 == NULL)
@@ -20,11 +20,11 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; s2[j] != '\0'; j++)
 		;
 
-	str = (char *)malloc(sizeof(char) * (i + (j + 1)));
+	str = malloc(sizeof(char) * (i + (j + 1)));
 
 	if(str == NULL)
 		return ('\0');
-	for (k = 0; k <= i; k++)
+	for (k = 0; k < i; k++)
 	{
 		str[k] = s1[k];
 	}
