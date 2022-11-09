@@ -14,16 +14,21 @@ int **alloc_grid(int width, int height)
 	if (width == 0 || height == 0)
 		return ('\0');
 	two_dim = (int **)malloc(height * sizeof(int *));
+	if (two_dim == NULL)
+	{
+		free(two_dim);
+		return ('\0');
+	}
 	for (i = 0; i < height; i++)
 	{
 		two_dim[i] = (int *)malloc(width * sizeof(int));
-	}
-	if (two_dim == NULL)
-	{
-		for (i = 0; i < height; i++)
-			free(two_dim[i]);
-		free(two_dim);
-		return ('\0');
+		if (two_dim[i] == NULL)
+		{
+			for (; i >= 0; i--)
+				free(two_dim[i]);
+			free(two_dim);
+			return (NULL);
+		}
 	}
 	for (i = 0; i < height; i++)
 	{
