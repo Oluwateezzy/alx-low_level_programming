@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 			cent = cent - 10;
 		else if (cent >= 5)
 			cent = cent - 5;
-		else if(cent >= 2)
+		else if (cent >= 2)
 			cent = cent - 2;
 		else if (cent >= 1)
 			cent = cent - 1;
