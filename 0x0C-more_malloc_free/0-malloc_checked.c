@@ -4,6 +4,7 @@
 /**
  * malloc_checked - function that allocates memory using malloc
  * @b: unsigned integer parameter
+ * Return: void
  */
 void *malloc_checked(unsigned int b)
 {
@@ -12,8 +13,7 @@ void *malloc_checked(unsigned int b)
 	mal = malloc(b);
 	if (mal == NULL)
 	{
-		fprintf(stderr, "98\n");
-		abort();
+		(exit(98));
 	}
 	return (mal);
 }
