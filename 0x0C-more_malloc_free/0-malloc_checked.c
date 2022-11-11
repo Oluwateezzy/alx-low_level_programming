@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * malloc_checked - function that allocates memory using malloc
  * @b: unsigned integer parameter
@@ -11,7 +12,8 @@ void *malloc_checked(unsigned int b)
 	mal = malloc(b);
 	if (mal == NULL)
 	{
-		return (98);
+		fprintf(stderr, "98\n");
+		abort();
 	}
 	return (mal);
 }
