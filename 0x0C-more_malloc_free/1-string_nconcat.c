@@ -21,10 +21,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	for (i = 0; s1[i] != '\0'; i++)
 		;
-	printf("i : %d\nj : %d\n", i, j);
 	if (n >= j)
 		n = j;
-	printf("%d\n", n);
 	ch = malloc(sizeof(char) * n + i + 1);
 	if (ch == NULL)
 		return ('\0');
@@ -37,5 +35,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ch[x] = s2[y];
 	}
 	return (ch);
+	free(ch);
 }
 
