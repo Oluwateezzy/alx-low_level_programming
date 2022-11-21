@@ -9,7 +9,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	unsigned i, x;
+	unsigned int i, x;
 	char *new_name, *new_owner;
 	dog_t *dog1;
 
