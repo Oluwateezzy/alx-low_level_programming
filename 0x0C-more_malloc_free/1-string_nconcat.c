@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		ch[x] = s2[y];
 	}
-	printf("%d\n", x)
+	printf("%d\n", x);
 	return (ch);
 }
 
