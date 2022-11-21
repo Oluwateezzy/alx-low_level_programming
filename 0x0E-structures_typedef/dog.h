@@ -5,7 +5,8 @@
  * @owner: char
  */
 #ifndef dog
-#define struct dog
+#define dog
+struct dog
 {
 	char *name;
 	float age;
