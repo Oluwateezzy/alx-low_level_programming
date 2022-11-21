@@ -31,11 +31,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		ch[x] = s1[x];
 	}
-	for (y = 0; y <= n; y++, x++)
+	for (y = 0; y < n; y++, x++)
 	{
 		ch[x] = s2[y];
 	}
 	return (ch);
-	free(ch);
 }
 
