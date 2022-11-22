@@ -28,7 +28,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", l_str);
 		else
 			printf("(nil)");
-		printf("%s", separator);
+		if (i < n - 1)
+			printf("%s", separator);
 	}
 	printf("%s\n", va_arg(str, char *));
 	va_end(str);
