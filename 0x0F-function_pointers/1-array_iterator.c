@@ -3,6 +3,7 @@
  * array_iterator - use pointer to function given to performe the needed action
  * on all array element
  * @size: size of array
+ * @array: array pointer parameter
  * @action: pointer to function
  * Return: void
  */
