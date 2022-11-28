@@ -2,6 +2,8 @@
 #include <stdlib.h>
 /**
  * main - print opcodes of its own program
+ * @argc: length of argument
+ * @argv: aargument array
  * Return: int
  */
 int main(int argc, char *argv[])
