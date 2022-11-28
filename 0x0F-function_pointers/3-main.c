@@ -5,7 +5,7 @@
  * @argv: array of argument
  * Return: integer
  */
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
 	int arg1, arg2, result;
 	int (*operator)(int, int);
