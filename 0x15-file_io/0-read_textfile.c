@@ -14,14 +14,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	i = 0;
 	if (filename == NULL)
 		return (0);
-	fd = fopen(filename, 'r');
+	fd = fopen(filename, "r");
 	if (fd == NULL)
 		return (0);
-	while (!feof(fd))
+	while (!feof(fd) & i < letters)
 	{
 		temp = fgetc(fd);
-		putc(temp);
-		i++;
+		printf("%c", temp);
+		++i;
 	}
 	fclose(fd);
 	return (i);
