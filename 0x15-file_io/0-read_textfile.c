@@ -7,22 +7,32 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *fd;
-	char temp;
-	ssize_t i;
+	ssize_t fd, wr, re;
+	char *buffer;
 
-	i = 0;
+	/* check given file */
 	if (filename == NULL)
 		return (0);
-	fd = fopen(filename, "r");
-	if (fd == NULL)
+	/* dynamically allocate memory to buffer */
+	buffer = malloc(sizeof(char) * letters);
+	if (!buffer)
 		return (0);
-	while (!feof(fd) & ((size_t) i < letters))
-	{
-		temp = fgetc(fd);
-		printf("%c", temp);
-		++i;
-	}
-	fclose(fd);
-	return (i);
+	/* create file descriptor */
+	fd = open(filename, O_RDWR);
+	if (fd == -1)
+		return (0);
+	/* read from file descriptor */
+	re = read(fd, buffer, letters);
+	if (re == -1)
+		return (0);
+	/* write from file descriptor */
+	wr = write(STDOUT_FILENO, buffer, re);
+	if (wr == -1 || wr != re)
+		return (0);
+	/* close file descriptor */
+	re = close(fd);
+	if (re == -1)
+		return (0);
+	free(buffer);
+	return (wr);
 }
