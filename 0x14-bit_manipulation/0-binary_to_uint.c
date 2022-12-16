@@ -27,12 +27,3 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (res);
 }
-/**
- * int power(int pow)
- * {
- * if (pow != 0)
- * return (2 * power(pow - 1));
- * else
- * return (1);
- * }
- */
