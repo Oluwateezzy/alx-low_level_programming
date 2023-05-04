@@ -3,7 +3,7 @@
  * get_dnodeint_at_index - return the nth of a linked list
  * @head: linked list
  * @index: index of node
- * Return; list
+ * Return: list
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
