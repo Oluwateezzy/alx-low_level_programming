@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * clear_bit - clear bit a specific index
- * n: digit
- * index: index
+ * @n: digit
+ * @index: index
  * Return: int
  */
 int clear_bit(unsigned long int *n, unsigned int index)
