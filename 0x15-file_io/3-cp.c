@@ -15,7 +15,7 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: %s file_from file_to\n", av[0]);
+		dprintf(STDERR_FILENO, "Usage: file_from file_to\n");
 		return (97);
 	}
 	fd_from = open(file_from, O_RDONLY);
@@ -24,7 +24,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		return (98);
 	}
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
