@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * main - crackme keygen
+ * @ac: cmd count
+ * @av: cmd args
+ * Return: int
+ */
+int main(int ac, char **av)
+{
+	char pwd[7];
+	char *s = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+	int len = strlen(av[1]), i, f;
+
+	(void) ac;
+	pwd[6] = '\0';
+	pwd[0] = s[(len ^ 59) & 63];
+	for (i = 0, f = 0; i < len; i++)
+		f += av[1][i];
+	pwd[1] = s[(f ^ 79) & 63];
+	for (i = 0, f = 1; i < len; i++)
+		f *= av[1][i];
+	pwd[2] = s[(f ^ 85) & 63];
+	for (i = 0, f = av[1][0]; i < len; i++)
+		if (av[1][i] > f)
+			f = av[1][i];
+	srand(f ^ 14);
+	pwd[3] = s[rand() & 63];
+	for (i = 0, f = 0; i < len; i++)
+		f += av[1][i] * av[1][i];
+	pwd[4] = s[(f ^ 239) & 63];
+	for (i = 0, f = 0; i < av[1][0]; i++)
+		f = rand();
+	pwd[5] = s[(f ^ 229) & 63];
+	for (i = 0; pwd[i]; i++)
+		printf("%c", pwd[i]);
+	return (0);
+}
